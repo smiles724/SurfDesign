@@ -1,0 +1,22 @@
+_target_: cath
+
+data_dir: '${paths.data_dir}/cath_4.3'
+chain_set_jsonl: 'chain_set.jsonl'
+chain_set_splits_json: 'splits.json'
+max_length: 500 # 393
+atoms: ['N', 'CA', 'C', 'O']
+surf_mode: 'pymol'
+bb_surface: true
+
+# alphabet related
+alphabet:
+  name: esm
+  featurizer: cath
+  featurizer_cfg:
+    surf_path: '${paths.data_dir}/cath_4.3/surface_${datamodule.surf_mode}_bb.lmdb'   # TODO: automatically bb
+
+# dataloader related
+max_tokens: 6000
+sort: true
+num_workers: 8
+pin_memory: true
