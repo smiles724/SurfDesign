@@ -1,0 +1,9 @@
+defaults:
+  - default.yaml
+
+accelerator: auto
+# strategy: ddp_sharded_fbo
+strategy: ddp
+precision: 32
+
+# sync_batchnorm: True
