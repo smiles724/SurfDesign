@@ -1,13 +1,33 @@
-<!-- <div align="center"> -->
-# SurfDeign
+<div align="center">
 
+# SurfDesign
+
+### Effective Protein Design on Molecular Surfaces
+
+*Official PyTorch implementation for structure-based protein sequence design with equivariant surface graphs and reprogrammed protein language models.*
+
+[![Status](https://img.shields.io/badge/Status-Accepted%20(KDD%202026%20AI4Science)-2EA44F)]()
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
 
-[//]: # ([![Paper]&#40;http://img.shields.io/badge/ICML_2023-arXiv.2302.01649-B31B1B.svg&#41;]&#40;https://arxiv.org/abs/2302.01649&#41;)
-[//]: # (<!-- [![Conference]&#40;http://img.shields.io/badge/AnyConference-year-4b44ce.svg&#41;]&#40;https://papers.nips.cc/paper/2020&#41; -->)
-<!-- </div> -->
-<!-- ## Description -->
+<br>
+
+**Fang Wu** · **Shuting Jin** · **Xiangru Tang** · **Mark Gerstein** · **Xiangxiang Zeng** · **Yejin Choi** · **Jure Leskovec** · **Jinbo Xu**
+
+<br>
+
+*Paper and citation details will be added upon official publication.*
+
+<br>
+
+<img src="model.png" alt="SurfDesign model architecture" width="900"/>
+
+</div>
+
+**Highlights**
+- Build surface graphs from molecular surfaces (oriented point clouds, k-NN, Gaussian RBF & spherical harmonics geometry).
+- Roto-translation equivariant surface encoder with structural adapters fused into ESM-2.
+- Train and evaluate on CATH and multichain PDB data; design sequences from PDB structures via notebook or CLI.
 
 ## Installation  
 The installation is based on the conatiner created from docker image `pytorch/pytorch:2.0.0-cuda11.7-cudnn8-devel`
@@ -197,7 +217,16 @@ SurfDesign draws inspiration and leverages/modifies implementations from the fol
 - [dauparas/ProteinMPNN](https://github.com/dauparas/ProteinMPNN/) for the ProteinMPNN implementation and multi-chain dataset.
 - [A4Bio/PiFold](https://github.com/A4Bio/PiFold) for their PiFold implementation.
 - [jasonkyuyim/se3_diffusion](https://github.com/jasonkyuyim/se3_diffusion) for their self-consistency structural evaluation implementation.
-- ByProt
-- SurfPro
+- [ByProt](https://github.com/BytedProtein/ByProt) serves as the official implementation of LM-Design. 
+- [SurfPro](https://github.com/JocelynSong/SurfPro) contains code and data for ICML 2024 paper SurfPro.
 
 We express our sincere appreciation to the authors of these repositories for their invaluable contributions to the development of SurfDesign.
+
+
+
+## Citation
+
+Please cite the paper if you find it helpful. BibTeX will be added upon official publication.
+
+
+
